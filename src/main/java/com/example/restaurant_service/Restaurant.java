@@ -18,6 +18,15 @@ public class Restaurant {
     private String address;
     private String city;
     private String zipcode;
+    private String phone;
+    private String email;
+    private String openingHours;
+    private String cuisineType;
+    private double rating;
+    private double avgCost;
+    private boolean isOpen = true; // Default true
+    private LocalDateTime createdAt = LocalDateTime.now();
+    
     public Long getId() {
 		return id;
 	}
@@ -122,20 +131,10 @@ public class Restaurant {
 		this.createdAt = createdAt;
 	}
 
-	private String phone;
-    private String email;
-    private String openingHours;
-    private String cuisineType;
-    private double rating;
-    private double avgCost;
-    private boolean isOpen;
-
-    private LocalDateTime createdAt = LocalDateTime.now();
+	
 
     // Generate getters and setters here
-    public boolean isIsOpen() {
-        return isOpen;
-    }
+ 
 
     public void setIsOpen(boolean isOpen) {
         this.isOpen = isOpen;
