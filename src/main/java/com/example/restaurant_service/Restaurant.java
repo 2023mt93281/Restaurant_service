@@ -115,11 +115,11 @@ public class Restaurant {
 		this.avgCost = avgCost;
 	}
 
-	public boolean isOpen() {
+	public boolean isIsOpen() {
 		return isOpen;
 	}
 
-	public void setOpen(boolean isOpen) {
+	public void setIsOpen(boolean isOpen) {
 		this.isOpen = isOpen;
 	}
 
@@ -130,14 +130,5 @@ public class Restaurant {
 	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
-
-	
-
-    // Generate getters and setters here
- 
-
-    public void setIsOpen(boolean isOpen) {
-        this.isOpen = isOpen;
-    }
 
 }
